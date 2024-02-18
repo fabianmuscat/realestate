@@ -21,8 +21,8 @@ return new class extends Migration
             $table->string('photo')->nullable();
             $table->string('phone')->nullable();
             $table->text('address')->nullable();
-            $table->string('role',  20)->default('user'); // admin, user
-            $table->string('status',  15)->default('active'); // active, blocked, deleted
+            $table->string('role',  20)->default('user'); // admin, agent, user
+            $table->string('status',  15)->default('active'); // active, inactive
             $table->rememberToken();
             $table->timestamps();
         });
